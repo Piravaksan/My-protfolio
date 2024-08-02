@@ -1,0 +1,127 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    background-color: #800966;
+    padding: 15px 0;
+    color: white;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.profile_name {
+    float: left;
+    padding: 20px;
+    color: white; /* Light color of your choice */
+    font-size: 30px; /* Font size */
+}
+
+.contact-info {
+    float: left;
+    padding: 20px;
+    color: white;
+    margin: 5px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 1;
+    padding: 1;
+}
+
+nav ul li {
+    margin-left: 25px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: normal;
+    transition: color 0.3s;
+}
+
+.topmenu:hover {
+    color: white;
+    font-weight: bolder;
+    text-decoration: underline;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+.profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 75%;
+    margin-bottom: 20px;
+}
+
+.skills-container,
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.skill,
+.project-card,
+.recommendation {
+    border: 2px solid #ddd;
+    padding: 10px;
+    border-radius: 7px;
+    flex: 1 1 30%;
+    box-shadow: 0 2px 4px rgba(151, 1, 106, 0.1);
+}
+
+.skill img,
+.project-card img,
+.recommendation img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #d4c707;
+    padding: 20px;
+    text-align: center;
+}
+
+.home-icon {
+    color: white;
+    text-decoration: none;
+}
+
+.popup {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}

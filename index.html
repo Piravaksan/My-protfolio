@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Client Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header id="home">
+        <div class="header-container">
+            <h1 class="profile_name">Piravaksan</h1> <br>
+            <p class="contact-info">Email: piravaksan@example.com</p>
+            <p class="contact-info">Phone: +1 (234) 567-890</p>
+            <nav>
+                <ul>
+                    <li class="topmenu"><a href="about">About Me</a></li>
+                    <li class="topmenu"><a href="skills">Skills</a></li>
+                    <li class="topmenu"><a href="projects">Projects</a></li>
+                    <li class="topmenu"><a href="recommendations">Recommendations</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="about">
+            <img src="https://cdn.pixabay.com/photo/2024/07/06/10/04/ai-generated-8876480_1280.png" alt="https://cdn.pixabay.com/photo/2024/07/06/10/04/ai-generated-8876480_1280.png" class="profile-image">
+            <h2>About Me</h2>
+            <p><h1>Hello! I'm Piravaksan,</h1> a passionate web developer with experience in creating dynamic and responsive websites. I love learning new technologies and applying them to solve real-world problems. My goal is to continuously grow as a developer and contribute to impactful projects.</p>
+        </section>
+        <section id="skills">
+            <h2>Skills</h2>
+            <div class="skills-container">
+                <div class="skill">
+                    <img src="html.png" alt="C:\Users\pirav\Downloads\learn">
+                    <p>HTML<br>2 years experiance</p>
+                </div>
+                <div class="skill">
+                    <img src="css.png" alt="C:\Users\pirav\Downloads\learn">
+                    <p>CSS<br>2 years experiance</p>
+                </div>
+                <div class="skill">
+                    <img src="js.webp" alt="C:\Users\pirav\Downloads\learn">
+                    <p>JavaScript<br>2 years experiance</p>
+                </div>
+                <div class="skill">
+                    <img src="py.png" alt="C:\Users\pirav\Downloads\learn">
+                    <p>Python <br>2 years experiance</p>
+                </div>
+                <div class="skill">
+                    <img src="r.png" alt="C:\Users\pirav\Downloads\learn">
+                    <p>React<br>2 years experiance</p>
+                </div>
+            </div>
+        </section>
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="projects-container">
+                <div class="project-card">
+                    <h3>Online Bookstore</h3>
+                    <p>Developed a full-stack online bookstore application using React for the front end and Node.js/Express for the back end. The application allows users to browse books, add them to their cart, and purchase them securely through a payment gateway. Implemented user authentication, search functionality, and a responsive design to ensure a seamless experience across all devices.</p>
+                </div>
+                <div class="project-card">
+                    <h3>Weather Forecasting App</h3>
+                    <p>Created a weather forecasting application using HTML, CSS, and JavaScript. The app fetches weather data from an external API and displays current weather conditions, a 7-day forecast, and weather alerts for the user's location. Utilized modern JavaScript (ES6+) features and CSS Flexbox/Grid for the layout. Implemented error handling for API requests and user input validation.</p>
+                </div>
+                <div class="project-card">
+                    <h3>Task Management System</h3>
+                    <p>Developed a task management system to help teams organize and manage their tasks effectively. The system includes features like task creation, assignment, deadline setting, and progress tracking. Built with Python and Django for the back end and Bootstrap for the front end. Implemented a user-friendly interface, role-based access control, and email notifications for task updates.</p>
+                </div>
+            </div>
+        </section>
+        <section id="recommendations">
+            <h2>Recommendations</h2>
+            <div class="recommendations-container">
+                <div class="recommendation">
+                    <p>"Piravaksan is a dedicated developer who always delivers quality work."</p>
+                    <p>- Jane Smith</p>
+                </div>
+                <div class="recommendation">
+                    <p>"His attention to detail and problem-solving skills are impressive."</p>
+                    <p>- Bob Johnson</p>
+                </div>
+                <div class="recommendation">
+                    <p>"Piravaksan's ability to learn new technologies quickly makes him a valuable asset."</p>
+                    <p>- Alice Brown</p>
+                </div>
+            </div>
+            <form id="recommendation-form">
+                <textarea id="new-recommendation" placeholder="Add your recommendation"></textarea>
+                <button id="recommend_btn" onclick="addRecommendation()">Submit</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <a href="#home" class="home-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" width="63px">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+        </a>
+    </footer>
+    <div id="popup" class="popup" style="display:none;">
+        <p>Thank you for your recommendation!</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
